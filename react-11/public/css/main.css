@@ -3,7 +3,7 @@
 
 * {
 	box-sizing: border-box;
-	list-style-type: none;
+	list-style: none;
 	text-decoration: none;
 	outline: 0;
 }
@@ -13,7 +13,7 @@ body {
 	font-size: 10px;
 }
 
-.header {
+.hero {
 	width: 100%;
 	height: 90vh;
 	padding: 20px;
@@ -21,7 +21,6 @@ body {
 
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: space-between;
 
 	background-attachment: fixed;
@@ -30,141 +29,148 @@ body {
 	background-size: cover;
 }
 
-.header:after{
+.hero:after{
   content: "";
-  background: rgba(0,0,0,.4);
+	background: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75% );
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 1;
 }
 
 .container {
 	width: 960px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.hero-menu {
 	display: flex;
-	flex-direction: row;
+	z-index: 2;
+}
+
+.hero-menu .container {
+	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	position: relative;
-	z-index: 10;
 }
 
-.header_menu ul {
+.hero-list {
 	display: flex;
-	flex-direction: row;
+	margin: 0;
+	padding: 0;
 }
 
-.header_menu ul li a {
-	font-size: 14px;
+.hero-list-item {
+	margin: 0 25px;
+}
+
+.hero-list-item a {
+	font-size: 1.3em;
 	font-weight: bold;
 	color: #ffffff;
 	margin: 25px;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
 }
 
-.header_menu ul li a:hover {
-	color: #E4BC30;
-}
+.hero-list-item a:hover {
+	color: #e4bb23;
+} 
 
-.profile {
+.hero-profile {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
-	font-size: 14px;
-	font-weight: bold;
-	color: #ffffff;
+	justify-content: flex-start;
 }
 
-.profile_image img {
-	border-radius: 100%;
+.hero-profile-image {
+	width: 45px;
 	height: 45px;
 	margin-right: 15px;
+	border-radius: 100%;
+	overflow: hidden;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
 }
 
-.content {
-	width: 960px;
-	margin-bottom: 25px;
-	position: relative;
-	z-index: 10;
+.hero-profile-image img {
+	width: 100%;
+	height: auto;
 }
 
-.header_movie_title {
-	margin-bottom: 25px;
-	font-size: 65px;
+.hero-profile-name {
+	color: #fff;
+	font-size: 1.3em;
 	font-weight: bold;
-	color: #ffffff;
 }
 
-.header_movie_genres a {
+.hero-content {
+	width: 100%;
+}
+
+.hero-content .container {
+	position: relative;
+	z-index: 2;
+}
+
+.hero-title {
+	color: #ffffff;
+	margin: 0;
+	font-size: 6.5em;
+	font-weight: bold;
+	line-height: 1.2em;
+	text-transform: uppercase;
+}
+
+.hero-genres {
+	display: flex;
+	margin: 15px 0 30px;
 	font-size: 13px;
+}
+
+.hero-genres-item {
 	color: #ffffff;
 	margin-right: 15px;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;	
 }
 
-.header_movie_genres a:hover {
-	color: #E4BC30;
+.hero-genres-item:hover {
+	color: #e4bb23;
 }
 
-.trailer_button {
-	margin: 25px 0;
-	padding: 15px 25px 15px 65px ;
-	border: 0;
-	background-color: #E4BC30;
-	font-size: 14px;
-	border-radius: 22px;
+.hero-button {
+	display: inline-block;
+	padding: 15px 50px;
+	color: #000;
+	font-size: 1.5em;
+	background-color: #e4bb23;
+	border-radius: 40px;
+	position: relative;
+	transition: all 0.2s ease-in-out;
 }
 
-.header_button .trailer {
-	font-size: 14px;
-	color: #000000;
+.hero-button:hover {
+	background-color: #bc9a1d;
 }
 
-.in_movies {
-	margin-top: 15px;
-	font-size: 14px;
-	color: #ffffff;
+.hero-button i {
+	font-size: 1.5em;
+	position: absolute;
+	right: 15px;
+	top: 12px;
 }
 
-.release_date {
-	margin-top: 15px;
-	font-size: 14px;
-	color: #E4BC30;
+.hero-info {
+	padding: 20px 0;
+	font-size: 1.4em;
+	color: #fff;
 }
 
-.movie_list {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.hero-info p:last-child {
+	color: #bc9a1d;
 }
 
-.movies_menu {
-	width: 100%;
-	height: 9vh;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	border-bottom: 1px solid #ebebeb;
-}
 
-.movies_menu ul {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	padding: 25px;
-}
-
-.movies_menu ul li a {
-	font-size: 13px;
-	font-weight: bold;
-	color: #E4BC30;
-	margin: 16px;
-	padding: 16px 0;
-}
-
-.movies_menu ul li a:hover {
-	border-bottom: 1px solid #E4BC30;
-}
 
