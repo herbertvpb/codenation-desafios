@@ -317,3 +317,44 @@ body {
 	color: #ccc;
 	cursor: pointer;
 }
+
+.footer {
+	width: 100%;
+	text-align: center;
+	color: #bababa;
+	background-color: #fff;
+	padding: 20px 0;
+}
+
+.footer .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-list {
+	display: flex;
+	padding: 0;
+}
+
+.footer-list-item {
+	margin: 0 20px;
+}
+
+.footer-list-item a {
+	font-size: 2.5em;
+	color: #bababa;
+	transition: all 0.2s ease-in-out;
+}
+
+.twitter-icon a:hover {
+	color: #55acee;
+}
+
+.facebook-icon a:hover {
+	color: #3b5998;
+}
+
+.instagram-icon a:hover {
+	color: #e95950;
+}
