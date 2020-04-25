@@ -9,12 +9,20 @@
 body {
 	padding-top: 56px;
 	background-color: #fafafa;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .container {
 	width: 100%;
 	margin: 0 auto;
 }
+
+@media screen and (min-width: 728px) {
+	.container {
+		width: 728px;
+	}
+}
+
 
 .header .container  {
 	display: flex;
@@ -39,7 +47,9 @@ body {
 	height: 100%;
 }
 
-.header__sendicon {
+.header__sendicon,
+.post__optionsbutton,
+.post__actionbutton {
 	border: 0;
 	outline: 0;
 	background: none;
@@ -57,11 +67,12 @@ body {
 .stories__profilephoto {
 	width: 78px;
 	height: 78px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-right: 24px;
+	margin-right: 18px;
 }
 
 .stories__profilephoto--newstory {
@@ -83,15 +94,78 @@ body {
 }
 
 .post {
+	background-color: #fff;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
+	font-size: 12px;
+	margin-bottom: 30px;
+	overflow: hidden;
 }
 
+.post__header {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px;
+}
 
+.post__author {
+	display: flex;
+	align-items: center;
+}
 
+.post__authorphoto {
+	width: 40px;
+	height: 40px;
+	margin-right: 8px;
+}
 
+.post__authorphoto img {
+	width: 100%;
+	border-radius: 50%;
+}
 
+.post__authorname,
+.post__likedbypeoplelink {
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+}
 
+.post__image {
+	margin: 0;
+}
 
+.post__image img {
+	width: 100%;
+}
+
+.post__actions {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 4px 8px;
+	font-size: 24px;
+}
+
+.post__actionbutton {
+	margin-right: 8px;
+}
+
+.post__likes {
+	display: flex;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.post__likedbyphoto {
+	width: 32px;
+	height: 32px;
+	margin: 8px;
+}
+
+.post__likedbyphoto img {
+	width: 100%;
+	border-radius: 50%;
+}
 
 
