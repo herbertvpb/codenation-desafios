@@ -7,15 +7,37 @@
 		<link rel="shortcut icon" type="image/png" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/fontawesome.min.css" />
-		<link rel="stylesheet" href="css/main.css" />
+		<link 
+			rel="preload" 
+			href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"
+			as="style"
+			onload="this.rel='stylesheet'"
+		>
+
+		<link 
+			rel="preload" 
+			href="css/fontawesome.min.css"
+			as="style"
+			onload="this.rel='stylesheet'"
+		>
+		<link 
+			rel="preload" 
+			href="css/normalize.css"
+			as="style"
+			onload="this.rel='stylesheet'"
+		>
+		<link 
+			rel="preload" 
+			href="css/main.css"
+			as="style"
+			onload="this.rel='stylesheet'"
+		>
 	</head>
 	<body>
 		<header class="header">
 			<div class="container">
 				<a href="#" class="header__logo">
-					<img src="img/instagram-logo.svg" alt="">
+					<img src="img/instagram-logo.svg" alt="Instagram Clone">
 				</a>
 				<button href="#" class="header__sendicon">
 					<i class="far fa-paper-plane"></i>
@@ -55,7 +77,7 @@
 					</header>
 
 					<figure class="post__image">
-						<img src="img/profiles/yoda/yoda-1.jpg" alt="">
+						<img src="img/profiles/yoda/yoda-1.jpg" alt="Foto do post de Yoda"/>
 					</figure>
 
 					<div class="post__actions">
@@ -92,9 +114,9 @@
 					<header class="post__header">
 						<div class="post__author">
 							<a href="#" class="post__authorphoto">
-								<img src="img/profiles/yoda/yoda-profile.jpg" alt="Foto do perfil de Mestre Yoda">
+								<img src="img/profiles/gamora/gamora-profile.jpg" alt="Foto do perfil de Gamora Zen">
 							</a>
-							<a href="#" class="post__authorname">Mestre Yoda</a>
+							<a href="#" class="post__authorname">Gamora Zen</a>
 						</div>
 						<button class="post__optionsbutton">
 							<i class="fas fa-ellipsis-h"></i>
@@ -102,7 +124,7 @@
 					</header>
 
 					<figure class="post__image">
-						<img src="img/profiles/yoda/yoda-1.jpg" alt="">
+						<img src="img/profiles/gamora/gamora-1.jpg" alt="Foto do post de Gamora">
 					</figure>
 
 					<div class="post__actions">
@@ -118,65 +140,14 @@
 							<i class="far fa-bookmark"></i>
 						</button>
 					</div>
-
 					<div class="post__likes">
 						<a href="#" class="post__likedbyphoto">
-							<img src="img/profiles/domino/domino-profile.jpg" alt="Foto do perfil de Domino">
+							<img src="img/profiles/carol/carol-profile.jpg" alt="Foto do perfil de Carol Danvers">
 						</a>
 						<p class="post__likedbypeople">
 							curtido por 
 							<a href="#" class="post__likedbypeoplelink">
-								Domino
-							</a>
-							e outras
-							<a href="#" class="post__likedbypeoplelink">
-								7 pessoas
-							</a>
-						</p>
-					</div>
-				</article>
-
-
-				
-				<article class="post">
-					<header class="post__header">
-						<div class="post__author">
-							<a href="#" class="post__authorphoto">
-								<img src="img/profiles/yoda/yoda-profile.jpg" alt="Foto do perfil de Mestre Yoda">
-							</a>
-							<a href="#" class="post__authorname">Mestre Yoda</a>
-						</div>
-						<button class="post__optionsbutton">
-							<i class="fas fa-ellipsis-h"></i>
-						</button>
-					</header>
-
-					<figure class="post__image">
-						<img src="img/profiles/yoda/yoda-1.jpg" alt="">
-					</figure>
-
-					<div class="post__actions">
-						<div class="post__interaction">
-							<button href="#" class="post__actionbutton">
-								<i class="far fa-heart"></i>
-							</button>
-							<button href="#" class="post__actionbutton">
-								<i class="far fa-comment"></i>
-							</button>
-						</div>
-						<button href="#" class="post__actionbutton">
-							<i class="far fa-bookmark"></i>
-						</button>
-					</div>
-
-					<div class="post__likes">
-						<a href="#" class="post__likedbyphoto">
-							<img src="img/profiles/domino/domino-profile.jpg" alt="Foto do perfil de Domino">
-						</a>
-						<p class="post__likedbypeople">
-							curtido por 
-							<a href="#" class="post__likedbypeoplelink">
-								Domino
+								Carol Danvers
 							</a>
 							e outras
 							<a href="#" class="post__likedbypeoplelink">
@@ -189,9 +160,9 @@
 					<header class="post__header">
 						<div class="post__author">
 							<a href="#" class="post__authorphoto">
-								<img src="img/profiles/yoda/yoda-profile.jpg" alt="Foto do perfil de Mestre Yoda">
+								<img src="img/profiles/black-panther/black-panther-profile.jpg" alt="Foto do perfil de T'Challa">
 							</a>
-							<a href="#" class="post__authorname">Mestre Yoda</a>
+							<a href="#" class="post__authorname">T'Challa</a>
 						</div>
 						<button class="post__optionsbutton">
 							<i class="fas fa-ellipsis-h"></i>
@@ -199,7 +170,7 @@
 					</header>
 
 					<figure class="post__image">
-						<img src="img/profiles/yoda/yoda-1.jpg" alt="">
+						<img src="img/profiles/black-panther/black-panther-1.jpg" alt="Foto do post de T'Challa" >
 					</figure>
 
 					<div class="post__actions">
@@ -218,12 +189,59 @@
 
 					<div class="post__likes">
 						<a href="#" class="post__likedbyphoto">
-							<img src="img/profiles/domino/domino-profile.jpg" alt="Foto do perfil de Domino">
+							<img src="img/profiles/bruce/bruce-profile.jpg" alt="Foto do perfil de Bruce Wayne">
 						</a>
 						<p class="post__likedbypeople">
 							curtido por 
 							<a href="#" class="post__likedbypeoplelink">
-								Domino
+								Bruce Wayne
+							</a>
+							e outras
+							<a href="#" class="post__likedbypeoplelink">
+								5 pessoas
+							</a>
+						</p>
+					</div>
+				</article>
+				<article class="post">
+					<header class="post__header">
+						<div class="post__author">
+							<a href="#" class="post__authorphoto">
+								<img src="img/profiles/carol/carol-profile.jpg" alt="Foto do perfil de Carol Danvers">
+							</a>
+							<a href="#" class="post__authorname">Carol Danvers</a>
+						</div>
+						<button class="post__optionsbutton">
+							<i class="fas fa-ellipsis-h"></i>
+						</button>
+					</header>
+
+					<figure class="post__image">
+						<img src="img/profiles/carol/carol-1.jpg" alt="Foto do post de Carol Danvers">
+					</figure>
+
+					<div class="post__actions">
+						<div class="post__interaction">
+							<button href="#" class="post__actionbutton">
+								<i class="far fa-heart"></i>
+							</button>
+							<button href="#" class="post__actionbutton">
+								<i class="far fa-comment"></i>
+							</button>
+						</div>
+						<button href="#" class="post__actionbutton">
+							<i class="far fa-bookmark"></i>
+						</button>
+					</div>
+
+					<div class="post__likes">
+						<a href="#" class="post__likedbyphoto">
+							<img src="img/profiles/yoda/yoda-profile.jpg" alt="Foto do perfil de Mestre Yoda">
+						</a>
+						<p class="post__likedbypeople">
+							curtido por 
+							<a href="#" class="post__likedbypeoplelink">
+								Mestre Yoda
 							</a>
 							e outras
 							<a href="#" class="post__likedbypeoplelink">
@@ -236,9 +254,9 @@
 					<header class="post__header">
 						<div class="post__author">
 							<a href="#" class="post__authorphoto">
-								<img src="img/profiles/yoda/yoda-profile.jpg" alt="Foto do perfil de Mestre Yoda">
+								<img src="img/profiles/domino/domino-profile.jpg" alt="Foto do perfil de Domino">
 							</a>
-							<a href="#" class="post__authorname">Mestre Yoda</a>
+							<a href="#" class="post__authorname">Domino</a>
 						</div>
 						<button class="post__optionsbutton">
 							<i class="fas fa-ellipsis-h"></i>
@@ -246,7 +264,7 @@
 					</header>
 
 					<figure class="post__image">
-						<img src="img/profiles/yoda/yoda-1.jpg" alt="">
+						<img src="img/profiles/domino/domino-1.jpg" alt="Foto do post de Domino">
 					</figure>
 
 					<div class="post__actions">
@@ -265,16 +283,16 @@
 
 					<div class="post__likes">
 						<a href="#" class="post__likedbyphoto">
-							<img src="img/profiles/domino/domino-profile.jpg" alt="Foto do perfil de Domino">
+							<img src="img/profiles/black-panther/black-panther-profile.jpg" alt="Foto do perfil de T'Challa">
 						</a>
 						<p class="post__likedbypeople">
 							curtido por 
 							<a href="#" class="post__likedbypeoplelink">
-								Domino
+								T'Challa
 							</a>
 							e outras
 							<a href="#" class="post__likedbypeoplelink">
-								7 pessoas
+								3 pessoas
 							</a>
 						</p>
 					</div>
@@ -283,9 +301,9 @@
 					<header class="post__header">
 						<div class="post__author">
 							<a href="#" class="post__authorphoto">
-								<img src="img/profiles/yoda/yoda-profile.jpg" alt="Foto do perfil de Mestre Yoda">
+								<img src="img/profiles/bruce/bruce-profile.jpg" alt="Foto do perfil de Bruce Wayne">
 							</a>
-							<a href="#" class="post__authorname">Mestre Yoda</a>
+							<a href="#" class="post__authorname">Bruce Wayne</a>
 						</div>
 						<button class="post__optionsbutton">
 							<i class="fas fa-ellipsis-h"></i>
@@ -293,7 +311,7 @@
 					</header>
 
 					<figure class="post__image">
-						<img src="img/profiles/yoda/yoda-1.jpg" alt="">
+						<img src="img/profiles/bruce/bruce-1.jpg" alt="Foto do post de Bruce Wayne">
 					</figure>
 
 					<div class="post__actions">
@@ -312,63 +330,16 @@
 
 					<div class="post__likes">
 						<a href="#" class="post__likedbyphoto">
-							<img src="img/profiles/domino/domino-profile.jpg" alt="Foto do perfil de Domino">
+							<img src="img/profiles/gamora/gamora-profile.jpg" alt="Foto do perfil de Gamora Zen">
 						</a>
 						<p class="post__likedbypeople">
 							curtido por 
 							<a href="#" class="post__likedbypeoplelink">
-								Domino
+								Gamora Zen
 							</a>
 							e outras
 							<a href="#" class="post__likedbypeoplelink">
-								7 pessoas
-							</a>
-						</p>
-					</div>
-				</article>
-				<article class="post">
-					<header class="post__header">
-						<div class="post__author">
-							<a href="#" class="post__authorphoto">
-								<img src="img/profiles/yoda/yoda-profile.jpg" alt="Foto do perfil de Mestre Yoda">
-							</a>
-							<a href="#" class="post__authorname">Mestre Yoda</a>
-						</div>
-						<button class="post__optionsbutton">
-							<i class="fas fa-ellipsis-h"></i>
-						</button>
-					</header>
-
-					<figure class="post__image">
-						<img src="img/profiles/yoda/yoda-1.jpg" alt="">
-					</figure>
-
-					<div class="post__actions">
-						<div class="post__interaction">
-							<button href="#" class="post__actionbutton">
-								<i class="far fa-heart"></i>
-							</button>
-							<button href="#" class="post__actionbutton">
-								<i class="far fa-comment"></i>
-							</button>
-						</div>
-						<button href="#" class="post__actionbutton">
-							<i class="far fa-bookmark"></i>
-						</button>
-					</div>
-
-					<div class="post__likes">
-						<a href="#" class="post__likedbyphoto">
-							<img src="img/profiles/domino/domino-profile.jpg" alt="Foto do perfil de Domino">
-						</a>
-						<p class="post__likedbypeople">
-							curtido por 
-							<a href="#" class="post__likedbypeoplelink">
-								Domino
-							</a>
-							e outras
-							<a href="#" class="post__likedbypeoplelink">
-								7 pessoas
+								2 pessoas
 							</a>
 						</p>
 					</div>
