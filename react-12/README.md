@@ -4,7 +4,7 @@
 Desenvolver uma versão **mobile first** do Instagram utilizando apenas **HTML5** e **CSS3**.
 
 > **Preview:**
-> [Instagram Codenation](https://viniciusvinna.netlify.app/html-instagram/)
+> [Instagram Clone](https://gifted-williams-82e82f.netlify.app/)
 
 ## Tópicos:
 Neste desafio, você vai praticar os seus conhecimentos em: 
