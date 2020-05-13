@@ -1,26 +1,23 @@
 'use strict'
 
 const fibonacci = () => {
-    let num1 = 0;
-    let num2 = 1;
-    let num3 = 0;
+    let nextNumber = 0;
+    const fibSequence = [0, 1];
 
-    const fibSequence = [num1, num2];
-
-    while (num3 < 350) {
-        num3 = num1 + num2;
-        fibSequence.push(num3);
-        num1 = num2;
-        num2 = num3;
+    while (nextNumber < 350) {
+        nextNumber = fibSequence[fibSequence.length - 2] + fibSequence[fibSequence.length - 1];
+        fibSequence.push(nextNumber);
     }
 
     return fibSequence;
 }
 
 const isFibonnaci = (num) => {
-    const fibSequence = fibonacci();
-    const index = fibSequence.findIndex(element => element === num);
-    return index >= 0;
+    if (!isNaN(num) && num >= 0) {
+        const fibSequence = fibonacci();
+        return fibSequence.includes(num);
+    }
+    return false;    
 }
 
 module.exports = {
