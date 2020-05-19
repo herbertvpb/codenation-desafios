@@ -1,5 +1,4 @@
 const promotions = ['SINGLE LOOK', 'DOUBLE LOOK', 'TRIPLE LOOK', 'FULL LOOK'];
-const { products } = require('./data/products.json');
 
 function getShoppingCart(ids, productsList) {
 	const filteredProducts = productsList.filter(product => 
@@ -13,23 +12,22 @@ function getShoppingCart(ids, productsList) {
 		}
 	});
 
-	const { promotion, totalRegularPrice } = filteredProducts.reduce((acc, product) => {
+	const { categories, totalRegularPrice } = filteredProducts.reduce((acc, product) => {
 		const categoryExists = acc.categories.some(cat => 
 			cat === product.category
 		);
 
-		acc.totalRegularPrice+= product.regularPrice;
-
 		if (!categoryExists) acc.categories.push(product.category);
 
-		acc.promotion = promotions[acc.categories.length - 1];
+		acc.totalRegularPrice+= product.regularPrice;
 
 		return acc;
 	}, {
-		promotion : '',
 		categories: [],
 		totalRegularPrice: 0
 	});
+
+	const promotion = promotions[categories.length - 1];
 
 	const totalPrice = filteredProducts.reduce((acc, product) => {
 		const promotionElement = product.promotions.find(promo => {
@@ -45,20 +43,15 @@ function getShoppingCart(ids, productsList) {
 
 	const discountValue = (totalRegularPrice - totalPrice).toFixed(2);
 
-	const discountPercentage = `${((discountValue / totalRegularPrice) * 100).toFixed(2)}%`;
+	const discount = ((discountValue / totalRegularPrice) * 100).toFixed(2) + '%';
 
 	return {
 		products,
 		promotion,
 		totalPrice,
 		discountValue,
-		discountPercentage,
+		discount,
 	}
 }
-
-// console.log(getShoppingCart([120, 230, 310, 490], products))
-// console.log(getShoppingCart([130, 140, 230, 260], products))
-// console.log(getShoppingCart([110, 120, 130, 140], products))
-// console.log(getShoppingCart([110, 130, 140, 230, 310, 330], products))
 
 module.exports = { getShoppingCart };
