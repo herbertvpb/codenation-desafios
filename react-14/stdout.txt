@@ -1,0 +1,14 @@
+
+> contacts_app@0.1.0 submit /home/herbert/codenation/react-14
+> react-scripts test src/__tests__/submit.test.js --reporters=default --reporters=jest-junit "--watchAll=false"
+
+  console.error node_modules/react-dom/cjs/react-dom.development.js:88
+    Warning: Invalid DOM property `class`. Did you mean `className`?
+        in div (at Spinner.jsx:5)
+        in Spinner (at Contacts.jsx:20)
+        in section (at Contacts.jsx:9)
+        in div (at Contacts.jsx:8)
+        in Contacts (at App.jsx:70)
+        in div (at App.jsx:63)
+        in App (at submit.test.js:25)
+
